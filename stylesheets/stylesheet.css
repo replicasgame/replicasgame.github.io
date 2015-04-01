@@ -7,10 +7,12 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71; 
+  background: #eee
+  }
 
 a {
-  color: #1e6bb8;
+  color: #B04100;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -54,10 +56,17 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  color: #fff;
+  color: #eee;
   text-align: center;
-  background-color: #00A8AE;
-  background-image: linear-gradient(120deg, #B04100, #00A8AE); }
+  background-color: #000000;
+
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#B04100, endColorstr=#000000);
+ background-image:-moz-linear-gradient(left, #B04100 00%, #000000 50%,#00A8AE 100%);
+background-image:linear-gradient(left, #B04100 00%, #000000 50%,#00A8AE 100%);
+background-image:-webkit-linear-gradient(left, #B04100 00%, #000000 50%,#00A8AE 100%);
+background-image:-o-linear-gradient(left, #B04100 00%, #000000 50%,#00A8AE 100%);
+background-image:-ms-linear-gradient(left, #B04100 00%, #000000 50%,#00A8AE 100%);
+ background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(00%,#B04100), color-stop(50%,#000000),color-stop(100%,#00A8AE)); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -112,7 +121,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #00A8AE; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
